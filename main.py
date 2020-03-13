@@ -3,11 +3,11 @@ import sys
 def check(s1, s2):
     if len(s1) != len(s2):
         return False
-    encode =  [-1 for i in range(26)]
+    encode =  [-1 for i in range(1000)]
     cur = 0
     for i in range(0,len(s1)):
-        original_char = ord(s1[i]) - ord('a') 
-        tranformed_char = ord(s2[i]) - ord('a')
+        original_char = ord(s1[i]) 
+        tranformed_char = ord(s2[i])
         if encode[original_char] == -1:
             encode[original_char] = tranformed_char
         else:
