@@ -18,11 +18,9 @@ def check(s1, s2):
 def main():
     s1 = sys.argv[1]
     s2 = sys.argv[2]
-    flag1to2 = check(s1,s2)
-    flag2to1 = check(s2,s1)
-    if flag1to2 == False or flag2to1 == False:
-        print(False)
+    if check(s1,s2) == True:
+        print("true")
     else:
-        print(True)
+        print("false")
     
 main()
